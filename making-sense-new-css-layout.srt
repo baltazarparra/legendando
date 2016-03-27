@@ -1,0 +1,1231 @@
+﻿1
+00:00:01,890 --> 00:00:07,159
+Eu sou a Rachel Andrew, e esses são
+alguns lugares que você pode encontrar mais informações,
+sobre mim.
+
+2
+00:00:07,160 --> 00:00:10,650
+Vou postar esses slides depois, e darei um link no final,
+onde poderemos pegar
+
+3
+00:00:10,650 --> 00:00:14,260
+todos arquivos com as demonstrações que vou
+mostrar aqui rapidamente.
+
+4
+00:00:14,260 --> 00:00:23,470
+Eu vim para mostrar um pouco de CSS, e o CSS sofreu
+muitas transformações desde que apareceu
+
+5
+00:00:23,470 --> 00:00:28,238
+pela primeira vez nos navegadores,
+Eu venho fazendo isso desde essa época
+
+6
+00:00:28,239 --> 00:00:29,550
+e apartir desse histórico
+
+7
+00:00:29,550 --> 00:00:35,870
+o CSS se tornou absolutamente incrível,
+podemos fazer muitas coisas novas
+
+8
+00:00:35,870 --> 00:00:39,530
+que até pouco tempo atrás só era possível com Javascript
+ou com muitas imagens recortadas
+
+9
+00:00:39,530 --> 00:00:46,300
+Mesmo assim, o jeito como o CSS trata os layouts,
+parece ter estagnado em algum lugar
+
+10
+00:00:46,300 --> 00:00:53,050
+de 2006 e essencialmente,
+estamos usando
+
+11
+00:00:53,050 --> 00:00:58,010
+para algo que ele não foi projetado para ser,
+usado para criar aplicações complexas
+
+12
+00:00:58,010 --> 00:01:04,269
+Levante a mão, quem geralmente usa algum tipo de
+framework, como o bootstrap,
+
+13
+00:01:04,269 --> 00:01:12,189
+foundation ou algum tipo de grid na criação do layout.
+Exatamente! vemos códigos por ai
+
+14
+00:01:12,189 --> 00:01:17,008
+desta forma! E eu sei que é possível
+não fazer isso usando SASS
+
+15
+00:01:17,009 --> 00:01:21,439
+Mesmo assim, você vai ver assim uma série de sites
+usando bootstrap dessa forma no HTML
+
+16
+00:01:21,439 --> 00:01:27,979
+eo que estamos fazendo aqui é que estamos descrevendo disposição em Moscou e se
+
+17
+00:01:27,979 --> 00:01:31,070
+você se importa que você não se preocupam com a semântica apelidos
+
+18
+00:01:31,070 --> 00:01:35,029
+Isso é conceitualmente muito pesado e torna-se difícil de fazer coisas como nova
+
+19
+00:01:35,030 --> 00:01:39,329
+break points que você conhece para pequenas a pequena janela de visualização assim que o tropical
+
+20
+00:01:39,329 --> 00:01:44,079
+trata muito difícil para fazer isso em um moscovo que estavam fazendo isso porque
+
+21
+00:01:44,079 --> 00:01:48,809
+layout é difícil e é frágil e temos objetivos de negócio para atender você não pode
+
+22
+00:01:48,810 --> 00:01:55,100
+só passei o dia todo brincando com CSS mensagem mostram o layout do sistema ID eles
+
+23
+00:01:55,100 --> 00:01:58,899
+estão a custar-nos e eles estão custando-nos a desenvolver o nosso como todos nós estamos aprendendo
+
+24
+00:01:58,899 --> 00:02:04,310
+para fazer este material a vinda a um custo de uma média ou cão documentos em plena
+
+25
+00:02:04,310 --> 00:02:10,660
+forma semântica tão pouco ainda importa um lote terrível e eles vêm a um custo de é
+
+26
+00:02:10,660 --> 00:02:13,840
+inclinando-se sobre o quadro para lidar com a complexidade
+
+27
+00:02:13,840 --> 00:02:19,349
+e matemática crescente mercado para os nossos documentos foram apoiado em três processadores e e
+
+28
+00:02:19,349 --> 00:02:25,910
+abstrair esses problemas, mas há esperança de que se trata, na forma
+
+29
+00:02:25,910 --> 00:02:30,910
+de um grupo de módulos que estão indo para redefinir a forma como nós lay out na web
+
+30
+00:02:30,910 --> 00:02:37,489
+e estes terrível layout de grade Xbox CSS eo módulo de alinhamento caixa de todos estes nossa
+
+31
+00:02:37,489 --> 00:02:44,989
+novo sistema para fazer layout na web, quando falamos sobre estes novos módulos que
+
+32
+00:02:44,989 --> 00:02:49,910
+tendem a falar em termos de como eles resolvem os nossos problemas e a razão que eles
+
+33
+00:02:49,910 --> 00:02:54,680
+resolver estes problemas é que eles perdem algumas características que característica
+
+34
+00:02:54,680 --> 00:03:00,120
+resolva última mensagem existente não tem que documento provavelmente separada para isso,
+
+35
+00:03:00,120 --> 00:03:04,560
+E não se esqueça de pulverizar eles nos dão controle do alinhamento verdade eles nos a dar
+
+36
+00:03:04,560 --> 00:03:10,750
+capacidade de enviar duas coisas em casa me fez a mim e eles foram patrocinados por padrão
+
+37
+00:03:10,750 --> 00:03:16,379
+eles removem a necessidade de calcular percentagens para fazer colunista e mais
+
+38
+00:03:16,379 --> 00:03:22,239
+importante que eles dão relação um ao outro no contexto de uma oval
+
+39
+00:03:22,239 --> 00:03:28,730
+layout e isso é muito importante porque muitos dos problemas que temos
+
+40
+00:03:28,730 --> 00:03:32,488
+com a nossa mensagem de layout existente é porque os itens no layout não
+
+41
+00:03:32,489 --> 00:03:38,260
+entender que os outros itens no layout existir se eu flutuar dois blocos de esquerda
+
+42
+00:03:38,260 --> 00:03:42,690
+e um à direita e à esquerda é mais curto do que a direita 1 eu tenho nenhuma maneira de dizer
+
+43
+00:03:42,690 --> 00:03:45,709
+a esquerda em bloco que deve estender-se visualmente a altura do
+
+44
+00:03:45,709 --> 00:03:50,239
+certo quanto tempo ela não sabe é que não sabia como treliça temos
+
+45
+00:03:50,239 --> 00:03:56,340
+tentado criar colunas de altura total durante anos talvez algumas pessoas que
+
+46
+00:03:56,340 --> 00:04:00,040
+pode lembrar a técnica colunas foto usando um verticalmente lado a lado
+
+47
+00:04:00,040 --> 00:04:02,079
+imagem de fundo para criar a ilusão
+
+48
+00:04:02,080 --> 00:04:05,810
+versão de uma coluna de altura completa e estas são as técnicas de um tipo de
+
+49
+00:04:05,810 --> 00:04:09,660
+estoque no comércio para o desenvolvedor de web e ter sido durante anos e eles realmente
+
+50
+00:04:09,660 --> 00:04:16,350
+começou a desmoronar quando responsiva veio esta relação é por isso que
+
+51
+00:04:16,350 --> 00:04:22,840
+pessoas pularam na ideia da tabela da exposição retornou elementos em uma tabela CSS
+
+52
+00:04:22,840 --> 00:04:26,960
+e que lhes deu relacionamento porque a tabela de elementos que não são capazes de ter um
+
+53
+00:04:26,960 --> 00:04:30,789
+relação uns aos outros e é por isso que esse tipo de trabalho para fazer coisas como
+
+54
+00:04:30,790 --> 00:04:35,920
+colunas de altura total tão flexível leilão bom aproveitar esta ideia de relacionamento e
+
+55
+00:04:35,920 --> 00:04:44,200
+eles realmente correr com ele e é aí que um monte de que o poder daqueles altura total
+
+56
+00:04:44,200 --> 00:04:49,430
+colunas Isso é muito bonito o comportamento grade função Flex básico que você tem um
+
+57
+00:04:49,430 --> 00:04:53,350
+exemplo simples livros de texto aqui estamos aproveitando o padrão inicial
+
+58
+00:04:53,350 --> 00:04:57,380
+valores do Flex adequada mudar a nossa barra lateral no nosso conteúdo no lado
+
+59
+00:04:57,380 --> 00:05:01,740
+efeitos contido nas baldwin do Site à altura do conteúdo do
+
+60
+00:05:01,740 --> 00:05:04,870
+cor de fundo vai todo o caminho até o fundo não ajuda a colocar atrás do
+
+61
+00:05:04,870 --> 00:05:11,080
+texto que posso fazer o mesmo com pudesse secar só tenho um grande em meu elemento áspero
+
+62
+00:05:11,080 --> 00:05:16,880
+Composição na minha barra lateral meu conteúdo usando posicionamento linha de base devem todos
+
+63
+00:05:16,880 --> 00:05:19,390
+Exemplos destes ideia de coisas
+
+64
+00:05:19,390 --> 00:05:28,340
+entendendo que lugar em um layout mais amplo, que é realmente importante, contanto
+
+65
+00:05:28,340 --> 00:05:36,419
+como nós falamos sobre separação de conteúdo do mercado de conteúdo de exibição
+
+66
+00:05:36,419 --> 00:05:40,530
+do jeito que parece que era uma espécie de grito de guerra do layout CSS
+
+67
+00:05:40,530 --> 00:05:44,130
+movimento que você tentando persuadir nossa mesa usando os amigos que eles deveriam
+
+68
+00:05:44,130 --> 00:05:49,530
+começar a utilizar este novo layout CSS brilhante tabelas relevantes, mas tem sido algo
+
+69
+00:05:49,530 --> 00:05:55,570
+de uma promessa falhou nós pode ter a fonte ideal disse um monitor, mas uma vez
+
+70
+00:05:55,570 --> 00:05:58,849
+você começar a lidar com responsivo vai tentar ter vários monitores de que
+
+71
+00:05:58,850 --> 00:06:03,210
+o conteúdo é muito difícil não parar de mexer com o único refrigerante em
+
+72
+00:06:03,210 --> 00:06:08,960
+a fim de obter os diferentes tipos de este lugar que queremos dar uma olhada
+
+73
+00:06:08,960 --> 00:06:13,930
+Flex Fox tenho a minha navegação aqui é muito simplesmente colocado para fora com o Xbox estou
+
+74
+00:06:13,930 --> 00:06:15,169
+usando o espaço entre
+
+75
+00:06:15,169 --> 00:06:19,779
+Joe pessoas Flex está assinando o espaço de sobra depois de exibir itens por
+
+76
+00:06:19,779 --> 00:06:24,139
+propriedade nova direção está definido para a linha e isso é o comportamento inicial para Xbox
+
+77
+00:06:24,139 --> 00:06:30,050
+você também pode usar a cor apenas jogar o iTunes uma coluna se eu quiser mudar o
+
+78
+00:06:30,050 --> 00:06:34,939
+ordem reflete aumentada posso definir a propriedade de direção Flex para reverter ou nós
+
+79
+00:06:34,939 --> 00:06:41,580
+poderia usar coluna de você também pode definir a ordem de usar a propriedade de ordem para que eu tenha
+
+80
+00:06:41,580 --> 00:06:45,289
+Tem um monte de itens que são visualizadas na ordem curta no recipiente efeito, dada a
+
+81
+00:06:45,289 --> 00:06:51,729
+número do modelo para que você possa ver que Tomoda podemos alterar a ordem agora, a
+
+82
+00:06:51,729 --> 00:06:55,139
+número 13 visualmente
+
+83
+00:06:58,120 --> 00:07:02,169
+nos dá o poder de mudar a ordem dos elementos em não um, mas dois
+
+84
+00:07:02,169 --> 00:07:04,289
+dimensões
+
+85
+00:07:04,289 --> 00:07:08,389
+um elemento pai ativos exibir grande e eu sou a criação de uma grade de três colunas
+
+86
+00:07:08,389 --> 00:07:15,969
+posicionar esses itens usando, mas o valor de Colin propriedade linha de grade antes do
+
+87
+00:07:15,969 --> 00:07:22,259
+foto / é o conteúdo de conteúdo começa no valor depois que a linha de terra e
+
+88
+00:07:22,259 --> 00:07:25,389
+que vamos fazer algo parecido com isto
+
+89
+00:07:25,389 --> 00:07:31,939
+itens de posicionamento ao redor da grade, tanto em colunas e linhas a restrição é
+
+90
+00:07:31,939 --> 00:07:35,919
+os itens de grade como o sexo Eu preciso ser uma rota direta do elemento que é
+
+91
+00:07:35,919 --> 00:07:42,258
+tornar-se um recipiente rápido, mas o pequeno portanto, além de essa colocação dos itens
+
+92
+00:07:42,259 --> 00:07:47,710
+em um layout de grade grade explícita também inclui regras de posicionamento automático que permitem
+
+93
+00:07:47,710 --> 00:07:54,870
+nos tomar um pedaço de conteúdo para atualizar e a grade será apenas exibir para nós
+
+94
+00:07:54,870 --> 00:08:00,249
+No exemplo anterior, se eu remover todo o posicionamento de grade informações que esses itens
+
+95
+00:08:00,249 --> 00:08:07,099
+será exibido por poderia garantir cada um em uma grade, então se eu adicionar mais algumas imagens
+
+96
+00:08:07,099 --> 00:08:12,128
+e algumas dessas imagens a paisagem e retrato tão fora de classe para qualquer Li
+
+97
+00:08:12,129 --> 00:08:17,479
+elementos que contêm imagens da paisagem e então eu posso definir a coluna de grade e
+
+98
+00:08:17,479 --> 00:08:22,159
+propriedade para passar duas linhas de modo que significa que minhas imagens da paisagem agora estendidos
+
+99
+00:08:22,159 --> 00:08:27,510
+duas grandes faixas e meu retrato uma vez encontrado o padrão pista e por isso fico
+
+100
+00:08:27,510 --> 00:08:34,799
+este show em tempos de sede ao relatório iTunes agora temos um
+
+101
+00:08:34,799 --> 00:08:39,049
+que leva dois caminhões e então nós temos uma lacuna porque a próxima imagem é também
+
+102
+00:08:39,049 --> 00:08:44,120
+paisagem que precisa para acompanhar-lo por grade padrão está a progredir para a frente é
+
+103
+00:08:44,120 --> 00:08:51,150
+mantendo os itens em Oranje a menos que eu adicione uma propriedade do fluxo auto grade com um
+
+104
+00:08:51,150 --> 00:09:00,340
+valor da grade densa vai encher o gás se move para o conteúdo que encontra uma imagem
+
+105
+00:09:00,340 --> 00:09:03,910
+que vai caber um tem um pedágio, mas ele deixou ele vai buscá-lo e ele vai colocá-la
+
+106
+00:09:03,910 --> 00:09:08,520
+para o espaço para que você possa ver o item para agora se tornou vem antes Lightroom 3
+
+107
+00:09:08,520 --> 00:09:19,060
+na exibição visual é incrivelmente poderoso e também um pouco assustador assim com
+
+108
+00:09:19,060 --> 00:09:24,609
+este poder vem grande responsabilidade estes novos métodos nos dar a capacidade de
+
+109
+00:09:24,610 --> 00:09:30,140
+documento separado Jordan visor de maneiras que nunca foram capazes de fazer antes e
+
+110
+00:09:30,140 --> 00:09:34,920
+precisamos começar a ter conversas sobre como podemos fazer isso de forma acessível
+
+111
+00:09:34,920 --> 00:09:40,849
+caminho, porque idealmente eles devem fazer capaz de criar realmente grande fonte
+
+112
+00:09:40,850 --> 00:09:46,960
+documentos e, em seguida, obter indicadores visuais que funcionam bem para dispositivos diferentes, mas
+
+113
+00:09:46,960 --> 00:09:51,790
+as pessoas podem apenas dizer por que você não se preocupar com a social, mais isso vai funcionar
+
+114
+00:09:51,790 --> 00:09:56,140
+o que eu faço pode simplesmente arrastar as coisas ao redor da grande que seria ruim mesmo
+
+115
+00:09:56,140 --> 00:10:00,680
+Desejo porque os itens só se tornam bons itens locais Affleck e se eles são
+
+116
+00:10:00,680 --> 00:10:06,790
+criança diabética do recipiente Acho que há um perigo real de que os indivíduos
+
+117
+00:10:06,790 --> 00:10:12,400
+escrever páginas da web que oferecem ferramentas ou pessoas fazendo frameworks JavaScript terá
+
+118
+00:10:12,400 --> 00:10:16,840
+começar a descascar Moscou, a fim de tornar mais fácil e ter uma achatada ou por isso é
+
+119
+00:10:16,840 --> 00:10:20,510
+mais fácil de usar estas técnicas eu acho que é um perigo real Eu acho que é
+
+120
+00:10:20,510 --> 00:10:24,150
+algo que deve estar pensando sobre como uma comunidade destes novos
+
+121
+00:10:24,150 --> 00:10:30,090
+mensagem que vem a ser isto é de o projecto do editor de caixa de texto de comentário
+
+122
+00:10:30,090 --> 00:10:34,980
+explicou que a ordem não muda a ordem lógica do documento, apenas
+
+123
+00:10:34,980 --> 00:10:43,420
+para a exibição visual assim parece que o desafio mais difícil na web design
+
+124
+00:10:43,420 --> 00:10:48,420
+é o alinhamento vertical e isso é algo que nova mensagem layout para
+
+125
+00:10:48,420 --> 00:10:59,479
+Este é o módulo de alinhamento caixa de seguro é um módulo que contém as características
+
+126
+00:10:59,480 --> 00:11:05,540
+de CSS que se relacionam com o alinhamento e é basicamente reflete o alinhamento caixas
+
+127
+00:11:05,540 --> 00:11:10,170
+caixa de efeitos capacidades trouxe eles poderiam aplicar-se a outra mensagem de layout
+
+128
+00:11:10,170 --> 00:11:14,689
+por isso este é o módulo de centralização vertical, embora ele cobre todas as coisas para
+
+129
+00:11:14,690 --> 00:11:17,690
+como distribuição do espaço transborda posicionamento lógico
+
+130
+00:11:20,740 --> 00:11:25,460
+disputas alinhamento mostramos um dos valores de palavras-chave eo texto simples
+
+131
+00:11:25,460 --> 00:11:30,440
+livros exemplo em Flex luxuosos justificar conteúdo e conteúdo on-line a uma linha
+
+132
+00:11:30,440 --> 00:11:36,560
+itens contra um dos dois trocaram eu tenho de navegação em uma fila e eu uso
+
+133
+00:11:36,560 --> 00:11:42,540
+justificar espaço de conteúdo entre alinhar meu primeiro e último itens nivelados com o
+
+134
+00:11:42,540 --> 00:11:48,310
+os lados do recipiente e distribuir o resto do espaço igualmente que puder você
+
+135
+00:11:48,310 --> 00:11:53,130
+espaço em torno de uma quantidade igual de espaço é, em seguida, colocado esquerda e direita dos itens
+
+136
+00:11:53,130 --> 00:12:00,540
+há uma espécie de meia espaço tamanho em cada extremidade, definindo um leão ou justificar
+
+137
+00:12:00,540 --> 00:12:04,959
+artigos sobre os fatos contidos e nós estamos mudando a prateleira Alliance e justificar
+
+138
+00:12:04,960 --> 00:12:11,660
+propriedades de auto de cada um dos itens individuais dentro Como você
+
+139
+00:12:11,660 --> 00:12:12,699
+já visto
+
+140
+00:12:12,700 --> 00:12:17,620
+itens em vigor contêm ter um relacionamento por padrão o valor de uma
+
+141
+00:12:17,620 --> 00:12:22,260
+itens de linha será estiramento que significa esse item que se estende através de acesso e
+
+142
+00:12:22,260 --> 00:12:26,630
+todos a mesma altura, apesar de não conterem conteúdo da mesma altura a minha
+
+143
+00:12:26,630 --> 00:12:30,490
+primeiro ponto de navegação que tem um pouco de texto em via as coisas que você vai
+
+144
+00:12:30,490 --> 00:12:37,620
+sabe que ir para a mesma altura que e outros problemas 2011 de CSS está fazendo
+
+145
+00:12:37,620 --> 00:12:42,750
+vertical, centralizando um item de linha para enviar o centro de item vendido contra o principal
+
+146
+00:12:42,750 --> 00:12:52,620
+eixo direção a invocar o item de linha enviado para ascender aos itens eu era apenas
+
+147
+00:12:52,620 --> 00:12:57,250
+material on-line de usar itens de flex individuais para mudar essa linha e propriedades
+
+148
+00:12:59,970 --> 00:13:09,300
+stretch deles centro para obter itens individuais de modo que este trabalha com pessoas Flex você
+
+149
+00:13:09,300 --> 00:13:12,329
+pode parar de brincar com isso, você sabe que você pode estar usando esses dados e
+
+150
+00:13:12,330 --> 00:13:17,740
+em última análise, vai aplicar-se a todos os tipos de layout e por isso esta é
+
+151
+00:13:17,740 --> 00:13:21,830
+implementadas nas especificações da rede para que possamos ter um olhar em como que está trabalhando em
+
+152
+00:13:21,830 --> 00:13:31,470
+atualizações grade degradar e eu estou definindo um item de linha da grelha para o centro nós temos
+
+153
+00:13:31,470 --> 00:13:35,260
+tem um padrão de repetição de grande tração e, em seguida, posicionando meus artigos
+
+154
+00:13:35,260 --> 00:13:42,220
+cada surpreendente OE grau quatro linhas na horizontal e verticalmente para cada um dos
+
+155
+00:13:42,220 --> 00:13:45,860
+a grade completa via Scopus quatro quadrados de a imagem de fundo pode ir ver que
+
+156
+00:13:45,860 --> 00:13:50,050
+foi também ligado por padrão o item sem você esticar e preencher o buraco
+
+157
+00:13:50,050 --> 00:13:57,410
+porque o seu item de linha celular para enviar os itens dentro de uma hora, podemos justificar a
+
+158
+00:13:57,410 --> 00:14:03,150
+itens que dizem boa mesmo posicionamento, mas desta vez, obter este tipo de alinhamento
+
+159
+00:14:06,990 --> 00:14:10,320
+Eu sou apenas como com o Xbox você tem o shell Alliance e justificar sell
+
+160
+00:14:10,320 --> 00:14:16,010
+propriedades e que lhe permitem direcionar itens individuais e ela podia realmente
+
+161
+00:14:16,010 --> 00:14:18,100
+ver como essas propriedades trabalhar aqui
+
+162
+00:14:18,100 --> 00:14:22,890
+Box como mostrado no trecho detalhada para cobrir a área cinza é definida para lançamento
+
+163
+00:14:22,890 --> 00:14:29,160
+prateleira e assento reclinar loja de começar e dia para alinhar auto center então temos
+
+164
+00:14:29,160 --> 00:14:33,740
+esses recursos de alinhamento poderosos e podemos começar a usar uma legenda para Xbox
+
+165
+00:14:33,740 --> 00:14:37,830
+a vinda de outra mensagem disposição em última análise, eles podem muito bem aplicar-se a bloquear
+
+166
+00:14:37,830 --> 00:14:42,209
+mensagem de layout, provavelmente, terá a capacidade de fazer as coisas na web para o
+
+167
+00:14:42,209 --> 00:14:48,119
+primeira vez, e ser capaz de alinhar os grupos e peças individuais é realmente
+
+168
+00:14:48,120 --> 00:14:53,370
+vital para design responsivo, mas não sei, talvez a largura que viewport I
+
+169
+00:14:53,370 --> 00:14:57,810
+Juro um monte de todos tiveram esse tipo de trabalho que você sabe coisas como as colunas pho
+
+170
+00:14:57,810 --> 00:15:01,729
+ideia é onde começou a cair uma vez que eu não sabia o quão grande essa coluna
+
+171
+00:15:01,730 --> 00:15:05,890
+ia ser e isso é a coisa com estes novos métodos que são
+
+172
+00:15:05,890 --> 00:15:08,949
+essencialmente responde por padrão
+
+173
+00:15:08,950 --> 00:15:14,660
+Tenho certeza que todos aqui sabem que há uma volta em 2009 Oriental
+
+174
+00:15:14,660 --> 00:15:19,089
+Detalhadas de mercado e tem uma lista de parte desta técnica para a criação de fluido
+
+175
+00:15:19,089 --> 00:15:24,560
+bridge ele estava trabalhando com tamanhos de telefone relativos e nota da grade deve
+
+176
+00:15:24,560 --> 00:15:28,599
+ser tratado da mesma maneira que poderia dividir o alvo com pelo desenvolvimento
+
+177
+00:15:28,600 --> 00:15:33,060
+o chicote do contexto para nos dar uma porcentagem para usar no lugar de absoluta
+
+178
+00:15:33,060 --> 00:15:38,540
+Tamanhos de quatro colunas em Design Eu sou assim que aconteceu que todos nós começamos
+
+179
+00:15:38,540 --> 00:15:45,829
+calcular esses números pouco provável que procuram e fixá-los em todos os novos
+
+180
+00:15:45,829 --> 00:15:50,479
+mensagem de layout foi se aposentar muitos desses cálculos, porque eles não podem
+
+181
+00:15:50,480 --> 00:15:55,899
+apenas fazer essas coisas para nós já vimos como o mais simples de Xbox
+
+182
+00:15:55,899 --> 00:16:00,470
+exemplos leva iTunes iniciativa declarou Flex exibição sobre eles e você
+
+183
+00:16:00,470 --> 00:16:04,630
+justificar o conteúdo com o valor de espaço entre este valor com o flexiona
+
+184
+00:16:04,630 --> 00:16:13,260
+de espaço disponível no espaço, conforme necessário, mas não há mais do que isso porque o Xbox
+
+185
+00:16:13,260 --> 00:16:16,840
+permite-nos parte utley distribuir o espaço entre o nosso produto
+
+186
+00:16:16,840 --> 00:16:21,870
+agora a propriedade Flex é um atalho para três propriedades temos crescer Flex
+
+187
+00:16:21,870 --> 00:16:24,870
+palestras e base flexível
+
+188
+00:16:26,060 --> 00:16:30,719
+texto livros projecto gesto espectros usar a abreviação para essas propriedades porque
+
+189
+00:16:30,720 --> 00:16:35,650
+eles vão redefinir os outros valores a coisas que fazem sentido e boa companhia
+
+190
+00:16:35,650 --> 00:16:43,510
+diz que há um monte de confusão em torno dessas coisas eram assim aqui estou eu
+
+191
+00:16:43,510 --> 00:16:49,230
+definindo psiquiatra Flex flex para um e isso significa que cada caixa de cada item Flex pode
+
+192
+00:16:49,230 --> 00:16:54,900
+crescer e encolher para caber no espaço mas a caixa ideal sagacidade minha base Flex é
+
+193
+00:16:54,900 --> 00:17:02,160
+200 fotos e compartilhar esse código aplicado a alguns itens vai me dar três caixas
+
+194
+00:17:02,160 --> 00:17:10,579
+de igualdade com os itens para embrulhar podemos droga para induzir Mollen ver que quando o
+
+195
+00:17:10,579 --> 00:17:16,409
+caixas de obter menor do que 200 pixels uma caixa vai quebrar em linha para tentar manter
+
+196
+00:17:16,410 --> 00:17:21,709
+Nessa base 200 pixels para a caixa final aqui está ocupando todo o Station
+
+197
+00:17:21,709 --> 00:17:26,459
+Estrada também porque os atacantes só funcionou em uma linha por linha de base se o voto que ele
+
+198
+00:17:26,459 --> 00:17:33,470
+Jurou que é permitido a crescer ela vai crescer vai preencher o espaço disponível se
+
+199
+00:17:33,470 --> 00:17:40,570
+Eu não quero que as caixas de crescer i sentou próxima linha 20 um tamanho de janela ampla meus pugilistas
+
+200
+00:17:40,570 --> 00:17:44,429
+só vai ficar para a foto 200 se você deixar as caixas embrulhada o terceiro item
+
+201
+00:17:44,430 --> 00:17:50,440
+ainda vai cair para baixo, mas não vai crescer e preencher a linha e você pode falar
+
+202
+00:17:50,440 --> 00:17:55,960
+itens individuais para ouvir sobre isso governa para a caixa de 300 caixas podem crescer e
+
+203
+00:17:55,960 --> 00:18:03,830
+encolher para dois pixels, mas a caixa de três não podem crescer para que você ver o que acontece uma vez
+
+204
+00:18:03,830 --> 00:18:09,050
+as caixas tem que esticar largura de 200 fotos que permanece 200 pixels no espaço
+
+205
+00:18:09,050 --> 00:18:14,310
+que está restante é distribuído entre as caixas que têm permitido a crescer, mas
+
+206
+00:18:14,310 --> 00:18:17,659
+há mais do que isso, porque o design responsivo é de cerca de proporções
+
+207
+00:18:17,660 --> 00:18:22,190
+isso é o que todas as opções para praticamente no fim de que podemos manter
+
+208
+00:18:22,190 --> 00:18:26,370
+proporções elementos de luxo pode atribuir diferentes corpos apenas texto crescer em
+
+209
+00:18:26,370 --> 00:18:27,780
+fraturamento
+
+210
+00:18:27,780 --> 00:18:30,260
+Estou configurando caixa de 32 Flex tateou
+
+211
+00:18:30,260 --> 00:18:33,520
+com os meus outros dois caixas que padrão reflete Wang
+
+212
+00:18:36,040 --> 00:18:40,820
+isso não significa é que a caixa de três torna-se o dobro do tamanho das caixas-lo
+
+213
+00:18:40,820 --> 00:18:44,600
+significa que, após a base de pixel 200 tenha sido retirado do disponíveis
+
+214
+00:18:44,600 --> 00:18:49,959
+no interior do recipiente do resto do espaço é atribuído a cada item de entre
+
+215
+00:18:49,960 --> 00:18:55,960
+de acordo com o que o fator de crescimento Flex que soa muito confuso uma boa maneira de
+
+216
+00:18:55,960 --> 00:18:56,950
+descobrir tudo
+
+217
+00:18:56,950 --> 00:19:01,020
+é este xbox jogo testar uma ferramenta que você pode ficar em uma carga de valores e será
+
+218
+00:19:01,020 --> 00:19:05,389
+dizer o que você sairia com eu quero começar a brincar com ele para
+
+219
+00:19:05,390 --> 00:19:11,390
+tornar século e uma vez que você entender que você tem um ponto de partida para
+
+220
+00:19:11,390 --> 00:19:18,810
+compreender unidade FL esta é uma unidade de fracção e, como o Flex crescer ele permite que você
+
+221
+00:19:18,810 --> 00:19:25,389
+atribuir uma fração do espaço disponível para que dê uma olhada rápida em este é o meu
+
+222
+00:19:25,390 --> 00:19:31,090
+grade simples que define três colunas, ou com um fora do caminho de modo que cria
+
+223
+00:19:31,090 --> 00:19:38,399
+três iguais qual a cor se eu mudar a minha definição e criar 600 pixels com
+
+224
+00:19:38,400 --> 00:19:43,440
+colunas e coluna lateral absoluta e, em seguida chamadores unidade 21 fração grandes
+
+225
+00:19:43,440 --> 00:19:48,360
+primeiro dá os fixos largura de 600 pixels o espaço restante se divide em dois
+
+226
+00:19:48,360 --> 00:19:55,149
+e que se desprende sua uma coluna para a outra se eu mudar minha última coluna 3 fo
+
+227
+00:19:55,150 --> 00:20:01,550
+o espaço restante ser dividido parte 243 é dado a 301 Park na água
+
+228
+00:20:01,550 --> 00:20:07,370
+isto apenas luz para Xbox significa que podemos criar um layout totalmente flexível que
+
+229
+00:20:07,370 --> 00:20:14,580
+têm tanta elemento corrigido neste é como o layout Santo Graal que nós
+
+230
+00:20:14,580 --> 00:20:19,470
+usado para tentar construir este tinha seis barras laterais do tempo centro líquido
+
+231
+00:20:19,470 --> 00:20:21,400
+coluna central pode ser o primeiro no show
+
+232
+00:20:21,400 --> 00:20:28,870
+ordem, mas iria dobrar de acordo com a tela com o seu como este não deve visto
+
+233
+00:20:28,870 --> 00:20:35,010
+isso em tributável este é o modelo de layout Ascot layout de grade CSS nós que CSS
+
+234
+00:20:35,010 --> 00:20:40,140
+dá-lhe um layout na coluna central está definido como uma unidade de fração que será
+
+235
+00:20:40,140 --> 00:20:42,419
+esticar em ocupar todo o
+
+236
+00:20:42,419 --> 00:20:47,940
+disponível que será algo parecido com isso que é uma boa época 2005
+
+237
+00:20:47,940 --> 00:20:52,690
+disposição não é o que a parede com o objetivo de construir esses dias, mas eu sinto que, dada
+
+238
+00:20:52,690 --> 00:21:00,159
+a história é bom saber que finalmente podemos fazê-lo por isso é um novo sistema
+
+239
+00:21:00,159 --> 00:21:05,429
+para a disposição Acho que levanta uma enorme quantidade de diferentes possibilidades que eu sou
+
+240
+00:21:05,429 --> 00:21:09,559
+muito animado para ver o que acontece ele fica nas mãos de pessoas que são
+
+241
+00:21:09,559 --> 00:21:13,570
+criativos com as suas coisas assim algumas pessoas como eu, que pode apenas construir coisas
+
+242
+00:21:13,570 --> 00:21:18,689
+temos grande nós temos o Xbox e, em seguida, que é amarrado junto com o
+
+243
+00:21:18,690 --> 00:21:24,220
+alinhamento das propriedades de distribuição espacial da Fox alinhamento a chave
+
+244
+00:21:24,220 --> 00:21:29,090
+diferença entre estes dois dados técnicos muitas vezes as pessoas dizem oh bem que eu deveria
+
+245
+00:21:29,090 --> 00:21:32,119
+estar usando devo usar um mundo ideal queria que eles tem tanto eu estaria usando
+
+246
+00:21:32,119 --> 00:21:39,320
+boxer Flex que eu iria usar feira para Xbox é para um que é de layout dimensional
+
+247
+00:21:39,320 --> 00:21:44,509
+coisas que podem ser dispostos em uma linha ou dispostos em uma coluna, embora fosse
+
+248
+00:21:44,509 --> 00:21:50,830
+essencialmente ainda tem uma linha ininterrupta que é para o layout bidimensional assim
+
+249
+00:21:50,830 --> 00:21:58,178
+Você está trabalhando com chamava o exemplo mais simples disso, se estamos em de
+
+250
+00:21:58,179 --> 00:22:04,009
+itens usando livros Flex Eu tenho uma base flexível aqui de 200 pixels e os itens
+
+251
+00:22:04,009 --> 00:22:11,090
+estão autorizados a aumentar e diminuir Tenho cinco itens que acontece aqui a
+
+252
+00:22:11,090 --> 00:22:16,019
+itens Flex rap mostram cada linha começar a agir como uma nova fatos contidos estou
+
+253
+00:22:16,019 --> 00:22:19,450
+distribuição espacial acontece do outro lado da linha que é assim que funciona
+
+254
+00:22:20,070 --> 00:22:23,149
+mostrar na linha superior temos três itens e, em seguida, vamos para a próxima linha
+
+255
+00:22:23,149 --> 00:22:27,508
+só temos dois itens que são permitidos a crescer por isso é diferente e elas se espalham
+
+256
+00:22:27,509 --> 00:22:31,470
+por todo lá e, em seguida, as pessoas dizem oh bem, na verdade, o que eu gostaria de ser capaz
+
+257
+00:22:31,470 --> 00:22:37,409
+fazer é alinhar esses dois iTunes fundo debaixo dos itens na parte superior e
+
+258
+00:22:37,409 --> 00:22:42,070
+caixa nova não faz isso porque está lidando com questões de linha ininterrupta
+
+259
+00:22:42,070 --> 00:22:45,799
+que é onde você quer layout de grade, se você quer fazer algo parecido com isto
+
+260
+00:22:45,799 --> 00:22:49,720
+porque ela queria controlar ambas as linhas e colunas
+
+261
+00:22:53,080 --> 00:22:57,399
+com layout de grade você faz algo como isso, você não faria nada com o
+
+262
+00:22:57,400 --> 00:23:02,590
+item é tudo ser controlado quando você está criando a grade e, em seguida, os itens
+
+263
+00:23:02,590 --> 00:23:07,209
+seria voado em fluirá para ele e que lhe daria esse tipo de esquema
+
+264
+00:23:07,210 --> 00:23:11,830
+a menos que você realmente especialmente disse algo que eu quero que você abranger toda a
+
+265
+00:23:11,830 --> 00:23:20,250
+a coluna rastreia você pegá-los em caminhões individuais de modo que este novo maravilhoso bondade
+
+266
+00:23:20,250 --> 00:23:26,180
+reflete gente casa que ela tem realmente grande para o nosso esporte neste momento, se você
+
+267
+00:23:26,180 --> 00:23:31,760
+pode usar o browser do seu você pode usar seu Xbox mesmo se você tem a prática do desporto de idade
+
+268
+00:23:31,760 --> 00:23:36,300
+navegadores é muito possível usar um monte de caixa de Flex tem essencialmente um
+
+269
+00:23:36,300 --> 00:23:40,200
+acessório ao seu layout de Soyuz métodos mais antigos e, em seguida, ser ajustado a
+
+270
+00:23:40,200 --> 00:23:44,880
+alinhamento e se as coisas parecem bastante apertado usando o Xbox, mas realmente todos
+
+271
+00:23:44,880 --> 00:23:48,630
+provavelmente deve começar a usar algum grau caixa no seu trabalho reflete a
+
+272
+00:23:48,630 --> 00:23:54,170
+Neste ponto, porque sua oferta ficou muito bom suporte vale a pena fazê-lo orgulhoso
+
+273
+00:23:54,170 --> 00:23:59,080
+para oferecer layout de grade não é tão bom o único navegador que tenha qualquer aplicação
+
+274
+00:23:59,080 --> 00:24:06,159
+que é uma espécie de vida é que eu 1011 borda e que é porque o suspeito veio de
+
+275
+00:24:06,160 --> 00:24:10,260
+Microsoft que caiu implementação antecipada nisso nesses escovas
+
+276
+00:24:10,260 --> 00:24:15,730
+mas é bastante diferente agora para a folha actual especificação foi
+
+277
+00:24:15,730 --> 00:24:21,310
+essencialmente, a primeira implementação da especificação para o melhor
+
+278
+00:24:21,310 --> 00:24:25,909
+material para trabalhar é em cromo e cromo regular, mas é atrás de um
+
+279
+00:24:25,910 --> 00:24:31,250
+necessidade principal para permitir a plataforma web experimental características da bandeira e, em seguida, lotes
+
+280
+00:24:31,250 --> 00:24:34,260
+de demos todas as coisas preso hoje shoney você pode ter um olhar para eles brincar
+
+281
+00:24:34,260 --> 00:24:39,890
+com que em um piscar mostram que deveria Chrome e Opera está sendo feito por
+
+282
+00:24:39,890 --> 00:24:45,880
+anteriormente patrocinado pela Bloomberg eles também estão fazendo o trabalho no WebKit WebKit
+
+283
+00:24:45,880 --> 00:24:51,810
+nightlies a rapidez com que permite que você precisa usar um WebKit prefixo graus na
+
+284
+00:24:51,810 --> 00:24:56,129
+o atraso de ponta a alta prioridade assim que eu estou supondo que a intenção de trazer a
+
+285
+00:24:56,130 --> 00:25:00,680
+implementação até o mesmo especificação mais nada e Mozilla Atualmente
+
+286
+00:25:00,680 --> 00:25:04,820
+implementação grande no Firefox bastante estes exemplos funciona no Firefox
+
+287
+00:25:04,820 --> 00:25:05,429
+esta noite
+
+288
+00:25:05,430 --> 00:25:10,770
+por favor ajuste a um partido caiu lá fora tão grande está chegando e ao contrário dos livros de flex
+
+289
+00:25:10,770 --> 00:25:15,060
+que tipo de Destilado É o tipo de estados de coração partido e mudou e vai
+
+290
+00:25:15,060 --> 00:25:19,429
+já confusa que foi desenvolvido por trás bandeiras isso, quando se faz
+
+291
+00:25:19,430 --> 00:25:24,740
+eventualmente, mudar e navega deve ser bastante igual em todos os navegadores e muito
+
+292
+00:25:24,740 --> 00:25:28,420
+completa e ele foi tipo de mantido por trás do pavilhão para que não temos
+
+293
+00:25:28,420 --> 00:25:33,300
+este problema dele emergente nesta que é uma boa notícia para quando isso acontecer
+
+294
+00:25:33,300 --> 00:25:37,220
+chegam podemos começar a usá-lo com alguma confiança que temos obtido o seu problema
+
+295
+00:25:37,220 --> 00:25:44,080
+apenas usá-lo com o que eu tenho lotes e lotes de grandes exemplos para jogar se você quiser
+
+296
+00:25:44,080 --> 00:25:50,710
+para ir e ter um olhar bom por example.com é por isso que eu mantenho toda a minha boa
+
+297
+00:25:50,710 --> 00:25:54,940
+exemplos que eu não posso colocar novos e eu adoraria ter mais pessoas a olhar para este
+
+298
+00:25:54,940 --> 00:25:58,670
+coisas em particular que tem um interesse em acessibilidade não é minha de
+
+299
+00:25:58,670 --> 00:26:02,570
+experiência para não gostam de ver mais conversas acontecendo ao seu redor sabem
+
+300
+00:26:02,570 --> 00:26:05,879
+utilizando estes novos última mensagem e acessibilidade acho que é um muito, muito
+
+301
+00:26:05,880 --> 00:26:11,860
+assunto importante Eu tenho uma coisa horário de expediente no almoço muito feliz de
+
+302
+00:26:11,860 --> 00:26:16,500
+ter uma conversa sobre algum deste material e você vai encontrar meus slides todo o código
+
+303
+00:26:16,500 --> 00:26:21,610
+exemplos desse ano e você pode sempre me tratou no Twitter ou me deixar cair uma linha
+
+304
+00:26:21,610 --> 00:26:24,409
+de falar sobre essas coisas muito obrigado para ouvir
+
