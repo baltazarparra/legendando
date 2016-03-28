@@ -1,0 +1,1503 @@
+﻿1
+00:00:01,890 --> 00:00:07,159
+simon rex untrue those are some places
+you can find more about may I will be
+
+2
+00:00:07,160 --> 00:00:10,650
+posting these slides later I'll give you
+a link at the end we can get all the
+
+3
+00:00:10,650 --> 00:00:14,260
+demo code things I'll be showing you
+going fairly quickly through some
+
+4
+00:00:14,260 --> 00:00:23,470
+examples so I've been working with CSS
+and CSS really became a thing since it
+
+5
+00:00:23,470 --> 00:00:28,238
+first appeared in browsers I've been
+doing this for that long and with that
+
+6
+00:00:28,239 --> 00:00:29,550
+kind of history
+
+7
+00:00:29,550 --> 00:00:35,870
+CSS today is absolutely amazing we can
+do a whole heap of stuff that put off a
+
+8
+00:00:35,870 --> 00:00:39,530
+long time we could only do with
+Javascript or by you know using a whole
+
+9
+00:00:39,530 --> 00:00:46,300
+stock of sliced up images but CSS layout
+seem to get itself stuck somewhere in
+
+10
+00:00:46,300 --> 00:00:53,050
+about 2006 and essentially we're using
+CSS for layout at the moment that was
+
+11
+00:00:53,050 --> 00:00:58,010
+never designed to be used for complex
+full-page application layout and that
+
+12
+00:00:58,010 --> 00:01:04,269
+show of hands who here is generally
+using some kind of framework bootstrap
+
+13
+00:01:04,269 --> 00:01:12,189
+Foundation also on four grades to the
+layout exactly and so we view so awesome
+
+14
+00:01:12,189 --> 00:01:17,008
+the weapon we see this and I know it's
+possible to not do this by using Sasha
+
+15
+00:01:17,009 --> 00:01:21,439
+whatever but if you view so a bootstrap
+sites you will see this in the Moscow
+
+16
+00:01:21,439 --> 00:01:27,979
+and what we're doing here is we are
+describing layout in moscow and whether
+
+17
+00:01:27,979 --> 00:01:31,070
+you care you don't care about semantics
+last names
+
+18
+00:01:31,070 --> 00:01:35,029
+this is conceptually very heavy and it
+makes it hard to do things like new
+
+19
+00:01:35,030 --> 00:01:39,329
+break points you know for small the
+small viewport so whatever tropical
+
+20
+00:01:39,329 --> 00:01:44,079
+treats quite difficult for doing this in
+a moscow who were doing this because
+
+21
+00:01:44,079 --> 00:01:48,809
+layout is hard and it is fragile and we
+have business goals to meet you can't
+
+22
+00:01:48,810 --> 00:01:55,100
+just spent all day playing about with
+CSS show ID system layout message they
+
+23
+00:01:55,100 --> 00:01:58,899
+are costing us and they're costing us
+develop ours as we're all learning how
+
+24
+00:01:58,899 --> 00:02:04,310
+to do this stuff the coming at a cost of
+an average or dog documents in fully
+
+25
+00:02:04,310 --> 00:02:10,660
+semantic way so so just still matters an
+awful lot and they come at a cost of is
+
+26
+00:02:10,660 --> 00:02:13,840
+leaning on framework to deal with
+complexity
+
+27
+00:02:13,840 --> 00:02:19,349
+and math rising market to our documents
+were leaning on three processors and and
+
+28
+00:02:19,349 --> 00:02:25,910
+to abstract away these problems but
+there is hope that it comes in the form
+
+29
+00:02:25,910 --> 00:02:30,910
+of a group of modules that are going to
+redefine how we do lay out on the web
+
+30
+00:02:30,910 --> 00:02:37,489
+and these awful Xbox CSS grid layout and
+the box alignment module these all our
+
+31
+00:02:37,489 --> 00:02:44,989
+new system for doing layout on the web
+when we talk about these new modules we
+
+32
+00:02:44,989 --> 00:02:49,910
+tend to talk in terms of how they solve
+our problems and the reason that they
+
+33
+00:02:49,910 --> 00:02:54,680
+solve these problems is that they shed
+some characteristics that characteristic
+
+34
+00:02:54,680 --> 00:03:00,120
+solve existing last message do not have
+they probably separate document so so it
+
+35
+00:03:00,120 --> 00:03:04,560
+and be sure to spray they give us true
+alignment control they give us the
+
+36
+00:03:04,560 --> 00:03:10,750
+ability to send two things home has done
+to me and they were sponsored by default
+
+37
+00:03:10,750 --> 00:03:16,379
+they remove the need to calculate
+percentages to make columnist and most
+
+38
+00:03:16,379 --> 00:03:22,239
+importantly they give relationship to
+each other in the context of an oval
+
+39
+00:03:22,239 --> 00:03:28,730
+layout and this is really important
+because a lot of the problems we have
+
+40
+00:03:28,730 --> 00:03:32,488
+with our existing layout message is
+because items in the layout do not
+
+41
+00:03:32,489 --> 00:03:38,260
+understand that the other items in the
+layout exist if I float two blocks left
+
+42
+00:03:38,260 --> 00:03:42,690
+and right and the left one is shorter
+than the right 1 I've got no way to tell
+
+43
+00:03:42,690 --> 00:03:45,709
+the left on block that it should
+visually extend to the height of the
+
+44
+00:03:45,709 --> 00:03:50,239
+right how long she doesn't know it's
+that didn't know how to lattice we've
+
+45
+00:03:50,239 --> 00:03:56,340
+been trying to create full height
+columns for years maybe some people who
+
+46
+00:03:56,340 --> 00:04:00,040
+might remember the photo columns
+technique using a vertically tiled
+
+47
+00:04:00,040 --> 00:04:02,079
+background image to create the illusion
+
+48
+00:04:02,080 --> 00:04:05,810
+version of a full-height column and
+these are the techniques of a kind of
+
+49
+00:04:05,810 --> 00:04:09,660
+stock in trade for the web developer and
+have been for years and they really
+
+50
+00:04:09,660 --> 00:04:16,350
+started to fall apart when responsive
+came along this relationship is why
+
+51
+00:04:16,350 --> 00:04:22,840
+people jumped on the idea of display
+table returned elements into a CSS table
+
+52
+00:04:22,840 --> 00:04:26,960
+and that gave them relationship because
+table of elements not able to have a
+
+53
+00:04:26,960 --> 00:04:30,789
+relationship to each other and that's
+why that kind of work to do things like
+
+54
+00:04:30,790 --> 00:04:35,920
+full height columns so flexible auction
+good take this idea of relationship and
+
+55
+00:04:35,920 --> 00:04:44,200
+they really run with it and that's where
+a lot of that power those full height
+
+56
+00:04:44,200 --> 00:04:49,430
+columns that's pretty much the basic
+behavior flex function grid so you got a
+
+57
+00:04:49,430 --> 00:04:53,350
+simple text books example here we're
+taking advantage of the initial default
+
+58
+00:04:53,350 --> 00:04:57,380
+values of the Flex proper change our
+sidebar on our content of in side
+
+59
+00:04:57,380 --> 00:05:01,740
+effects contained on the Site baldwin's
+to the height of the content the
+
+60
+00:05:01,740 --> 00:05:04,870
+background color goes all the way to the
+bottom it doesn't help put behind the
+
+61
+00:05:04,870 --> 00:05:11,080
+text I can do the same with could dry
+out just got a great on my rough element
+
+62
+00:05:11,080 --> 00:05:16,880
+composition in my sidebar my content
+using line based positioning should all
+
+63
+00:05:16,880 --> 00:05:19,390
+of these examples idea of things
+
+64
+00:05:19,390 --> 00:05:28,340
+understanding that place in a wider
+layout that's really important as long
+
+65
+00:05:28,340 --> 00:05:36,419
+as we've talked about separation of
+content from the display content market
+
+66
+00:05:36,419 --> 00:05:40,530
+from the way it looks that was kind of
+the rallying cry of the CSS layout
+
+67
+00:05:40,530 --> 00:05:44,130
+movement you trying to persuade our
+table using friends that they should
+
+68
+00:05:44,130 --> 00:05:49,530
+start using this new shiny CSS layout
+relevant tables but it's been something
+
+69
+00:05:49,530 --> 00:05:55,570
+of a failed promise we can you have the
+ideal source told one display but once
+
+70
+00:05:55,570 --> 00:05:58,849
+you start dealing with responsive will
+try to have multiple displays of that
+
+71
+00:05:58,850 --> 00:06:03,210
+content it's very difficult to not stop
+messing about with the sole soda in
+
+72
+00:06:03,210 --> 00:06:08,960
+order to get the different kinds of this
+place that we want to take a look at
+
+73
+00:06:08,960 --> 00:06:13,930
+flex Fox got my navigation here it's
+very simply laid out with the Xbox I'm
+
+74
+00:06:13,930 --> 00:06:15,169
+using space between
+
+75
+00:06:15,169 --> 00:06:19,779
+Joe flex folks are signing the space
+left over after displaying items by
+
+76
+00:06:19,779 --> 00:06:24,139
+fresh direction property is set to row
+and that's the initial behavior for Xbox
+
+77
+00:06:24,139 --> 00:06:30,050
+you can also use color just play the
+iTunes a column if I want to switch the
+
+78
+00:06:30,050 --> 00:06:34,939
+order reflects heightened I can set the
+Flex direction property to reverse or we
+
+79
+00:06:34,939 --> 00:06:41,580
+could use column of you can also set the
+order using the order property so I've
+
+80
+00:06:41,580 --> 00:06:45,289
+got a bunch of items displaying in short
+order in effect container given the
+
+81
+00:06:45,289 --> 00:06:51,729
+model number so you can see that tomoda
+we can change the order to now the
+
+82
+00:06:51,729 --> 00:06:55,139
+number 13 visually
+
+83
+00:06:58,120 --> 00:07:02,169
+gives us the power to change the order
+of elements in not one but two
+
+84
+00:07:02,169 --> 00:07:04,289
+dimensions
+
+85
+00:07:04,289 --> 00:07:08,389
+a parent element assets display great
+and I'm setting up a three column grid
+
+86
+00:07:08,389 --> 00:07:15,969
+positioning these items using but Colin
+grid row property's value before the
+
+87
+00:07:15,969 --> 00:07:22,259
+photo / is the content content starts on
+the value after as the land line and
+
+88
+00:07:22,259 --> 00:07:25,389
+that let's just do something like this
+
+89
+00:07:25,389 --> 00:07:31,939
+positioning items around the grid both
+in columns and rows the constraint is
+
+90
+00:07:31,939 --> 00:07:35,919
+the grid items like sex I need to be a
+direct route of the element that's
+
+91
+00:07:35,919 --> 00:07:42,258
+become a quick container but the small
+so in addition to this placing of items
+
+92
+00:07:42,259 --> 00:07:47,710
+on an explicit grid grid layout also
+includes auto placement rules they let
+
+93
+00:07:47,710 --> 00:07:54,870
+us take a chunk of content to upgrade
+and the grid will just display for us to
+
+94
+00:07:54,870 --> 00:08:00,249
+the previous example if I remove all
+positioning information grid these items
+
+95
+00:08:00,249 --> 00:08:07,099
+will be displayed by could ensure each
+in a grid so if I add some more images
+
+96
+00:08:07,099 --> 00:08:12,128
+and some of those images a landscape and
+portrait so out of class to any Li
+
+97
+00:08:12,129 --> 00:08:17,479
+elements that contain landscape images
+and I can then set the grid column and
+
+98
+00:08:17,479 --> 00:08:22,159
+property to spend two lines so that
+means my landscape images now spanned
+
+99
+00:08:22,159 --> 00:08:27,510
+two great tracks and my portrait once
+found the default one track and so I get
+
+100
+00:08:27,510 --> 00:08:34,799
+this show in times of registered office
+to iTunes report right now we've got one
+
+101
+00:08:34,799 --> 00:08:39,049
+that takes two trucks and then we've got
+a gap because the next image is also
+
+102
+00:08:39,049 --> 00:08:44,120
+landscape it needs to track so by
+default grid is progressing forward it's
+
+103
+00:08:44,120 --> 00:08:51,150
+keeping the items in Oranje unless I add
+a property of grid auto flow with a
+
+104
+00:08:51,150 --> 00:09:00,340
+value of dense grid will fill the gas it
+moves to the content it finds an image
+
+105
+00:09:00,340 --> 00:09:03,910
+that will fit a got a toll but he left
+it will pick it up and it will pop it
+
+106
+00:09:03,910 --> 00:09:08,520
+into the space so you can see the item
+for now become comes before Lightroom 3
+
+107
+00:09:08,520 --> 00:09:19,060
+in the visual display this is incredibly
+powerful and also slightly scary so with
+
+108
+00:09:19,060 --> 00:09:24,609
+this power comes great responsibility
+these new methods give us the ability to
+
+109
+00:09:24,610 --> 00:09:30,140
+separate document Jordan display in ways
+we have never been able to do before and
+
+110
+00:09:30,140 --> 00:09:34,920
+we need to start having conversations
+about how we do this in an accessible
+
+111
+00:09:34,920 --> 00:09:40,849
+way because ideally they should make
+able to create really great source
+
+112
+00:09:40,850 --> 00:09:46,960
+documents and then get visual displays
+that work well for different devices but
+
+113
+00:09:46,960 --> 00:09:51,790
+people may just say why don't you worry
+about social anymore this will work
+
+114
+00:09:51,790 --> 00:09:56,140
+whatever I do I can just drag things
+around the great that would be bad even
+
+115
+00:09:56,140 --> 00:10:00,680
+wish because items only become good
+items Affleck sites and if they are
+
+116
+00:10:00,680 --> 00:10:06,790
+diabetic child of the container I think
+there is a real danger that individuals
+
+117
+00:10:06,790 --> 00:10:12,400
+writing web pages offering tools or
+people making JavaScript frameworks will
+
+118
+00:10:12,400 --> 00:10:16,840
+start to strip Moscow in order to make
+it easy and have a flattish or so it is
+
+119
+00:10:16,840 --> 00:10:20,510
+easier to use these techniques I think
+that's a real danger I think it's
+
+120
+00:10:20,510 --> 00:10:24,150
+something that we should be thinking
+about as a community of these new
+
+121
+00:10:24,150 --> 00:10:30,090
+message coming to being this is from the
+comment text box editor's draft
+
+122
+00:10:30,090 --> 00:10:34,980
+explained that order does not change the
+logical order of the document it just
+
+123
+00:10:34,980 --> 00:10:43,420
+for the visual display so it appears
+that the hardest challenge in web design
+
+124
+00:10:43,420 --> 00:10:48,420
+is vertical alignment and this is
+something that new layout message so
+
+125
+00:10:48,420 --> 00:10:59,479
+this is the safest box alignment module
+it's a module that contains the features
+
+126
+00:10:59,480 --> 00:11:05,540
+of CSS that relate to alignment and it's
+basically reflects boxes the alignment
+
+127
+00:11:05,540 --> 00:11:10,170
+capabilities effects box brought out
+they could apply to other layout message
+
+128
+00:11:10,170 --> 00:11:14,689
+so this is the vertical centering module
+although it covers all the things to
+
+129
+00:11:14,690 --> 00:11:17,690
+like distribution of space overflows
+logical positioning
+
+130
+00:11:20,740 --> 00:11:25,460
+disputes alignment we show one of the
+key word values and the simple text
+
+131
+00:11:25,460 --> 00:11:30,440
+books example in Flex luxurious justify
+content and online content to a line
+
+132
+00:11:30,440 --> 00:11:36,560
+items against one of the two exchanged
+I've got navigation in a row and I use
+
+133
+00:11:36,560 --> 00:11:42,540
+justify content space between to line up
+my first and last items flush with the
+
+134
+00:11:42,540 --> 00:11:48,310
+sides of the container and distribute
+the rest of the space equally I can you
+
+135
+00:11:48,310 --> 00:11:53,130
+space around an equal amount of space is
+then placed left and right of the items
+
+136
+00:11:53,130 --> 00:12:00,540
+there's a kind of half size space on
+each end by setting a lion or justify
+
+137
+00:12:00,540 --> 00:12:04,959
+items on the facts contained and we're
+changing the Alliance shelf and justify
+
+138
+00:12:04,960 --> 00:12:11,660
+self properties of each of the
+individual items inside as you've
+
+139
+00:12:11,660 --> 00:12:12,699
+already seen
+
+140
+00:12:12,700 --> 00:12:17,620
+items in effect contain have
+relationship by default the value of a
+
+141
+00:12:17,620 --> 00:12:22,260
+line items will be stretch which means
+that item stretching across access and
+
+142
+00:12:22,260 --> 00:12:26,630
+all the same height despite not
+containing content of the same height my
+
+143
+00:12:26,630 --> 00:12:30,490
+first navigation point that has got a
+bit of text in via the things you'll
+
+144
+00:12:30,490 --> 00:12:37,620
+know to go to the same height as that
+and other problems 2011 of CSS is doing
+
+145
+00:12:37,620 --> 00:12:42,750
+vertical centering a line item to send
+the item sold center against the main
+
+146
+00:12:42,750 --> 00:12:52,620
+axis direction to call on the line item
+sent to ascend to the items I was just
+
+147
+00:12:52,620 --> 00:12:57,250
+online stuff from using individual flex
+items to change that line and properties
+
+148
+00:12:59,970 --> 00:13:09,300
+stretch of them center to get individual
+items so this works with Flex folks you
+
+149
+00:13:09,300 --> 00:13:12,329
+can stop playing around with this you
+know you can be using this data and
+
+150
+00:13:12,330 --> 00:13:17,740
+ultimately it's going to apply to all
+kinds of layout and so this is
+
+151
+00:13:17,740 --> 00:13:21,830
+implemented in the grid specs so we can
+have a look at how that's working in
+
+152
+00:13:21,830 --> 00:13:31,470
+grid upgrades degrade and I'm setting a
+line items on the grid to center we've
+
+153
+00:13:31,470 --> 00:13:35,260
+got a repeating pattern of great
+traction and then positioning my items
+
+154
+00:13:35,260 --> 00:13:42,220
+each grade OE astounding four lines
+horizontally and vertically so each of
+
+155
+00:13:42,220 --> 00:13:45,860
+the full grid via Scopus four squares of
+the background image might go see that
+
+156
+00:13:45,860 --> 00:13:50,050
+was also linked by default the item
+without you stretch and fill the hole
+
+157
+00:13:50,050 --> 00:13:57,410
+because your cell line item to send the
+items within the hour we can justify the
+
+158
+00:13:57,410 --> 00:14:03,150
+items saying good same placement but
+this time we get this kind of alignment
+
+159
+00:14:06,990 --> 00:14:10,320
+I'm just like with the Xbox you got the
+Alliance shell and justify sell
+
+160
+00:14:10,320 --> 00:14:16,010
+properties and that let you target
+individual items and she could really
+
+161
+00:14:16,010 --> 00:14:18,100
+see how these properties work here
+
+162
+00:14:18,100 --> 00:14:22,890
+box as shown on the detailed stretch to
+cover the gray area is set to launch
+
+163
+00:14:22,890 --> 00:14:29,160
+shelf and seat recline shop start and
+day to align self center so we've got
+
+164
+00:14:29,160 --> 00:14:33,740
+these powerful alignment capabilities
+and we can start using a legend for Xbox
+
+165
+00:14:33,740 --> 00:14:37,830
+the coming to other layout message
+ultimately they may well apply to block
+
+166
+00:14:37,830 --> 00:14:42,209
+layout message will probably have the
+ability to do things on the web for the
+
+167
+00:14:42,209 --> 00:14:48,119
+first time and being able to align
+groups and individual items is really
+
+168
+00:14:48,120 --> 00:14:53,370
+vital for responsive design but we don't
+know maybe how wide that viewport I
+
+169
+00:14:53,370 --> 00:14:57,810
+swear a lot of all had that kind of work
+you know things like the the pho columns
+
+170
+00:14:57,810 --> 00:15:01,729
+idea is where they started to fall down
+once I didn't know how wide that column
+
+171
+00:15:01,730 --> 00:15:05,890
+was going to be and that's the thing
+with these new methods they are
+
+172
+00:15:05,890 --> 00:15:08,949
+essentially responsive by default
+
+173
+00:15:08,950 --> 00:15:14,660
+I'm sure everyone here knows that
+there's a back in 2009 the Eastern
+
+174
+00:15:14,660 --> 00:15:19,089
+Market detailed and has a list of part
+of this technique for creating fluid
+
+175
+00:15:19,089 --> 00:15:24,560
+bridge he was working with relative
+phone sizes and note of the grid should
+
+176
+00:15:24,560 --> 00:15:28,599
+be treated in the same way that we could
+divide the target with development by
+
+177
+00:15:28,600 --> 00:15:33,060
+the whip the context to give us a
+percentage to use in place of absolute
+
+178
+00:15:33,060 --> 00:15:38,540
+sizes four columns in design I'm so it
+came to pass that we all started
+
+179
+00:15:38,540 --> 00:15:45,829
+calculating these unlikely looking
+numbers and sticking them in all the new
+
+180
+00:15:45,829 --> 00:15:50,479
+layout message was to retire a lot of
+those calculations because they can't
+
+181
+00:15:50,480 --> 00:15:55,899
+just do this stuff for us we've already
+seen how the most simple of Xbox
+
+182
+00:15:55,899 --> 00:16:00,470
+examples takes initiative iTunes
+declared display flex on them and you
+
+183
+00:16:00,470 --> 00:16:04,630
+justify content with the value of space
+between that value flexes with the
+
+184
+00:16:04,630 --> 00:16:13,260
+available space space as needed but
+there's more than that because the Xbox
+
+185
+00:16:13,260 --> 00:16:16,840
+allows us to portion utley distribute
+space between our item
+
+186
+00:16:16,840 --> 00:16:21,870
+now the Flex property is a shorthand for
+three properties we've got flex grow
+
+187
+00:16:21,870 --> 00:16:24,870
+lecturing and flex basis
+
+188
+00:16:26,060 --> 00:16:30,719
+text books draft spectra gesture use the
+shorthand for these properties because
+
+189
+00:16:30,720 --> 00:16:35,650
+they will reset the other values to
+things that make sense and good company
+
+190
+00:16:35,650 --> 00:16:43,510
+says there's quite a lot of confusion
+around these things were so here I am
+
+191
+00:16:43,510 --> 00:16:49,230
+setting flex flex shrink to one and that
+means that every box every flex item can
+
+192
+00:16:49,230 --> 00:16:54,900
+grow and shrink to fit into the space
+but the ideal box wit my Flex basis is
+
+193
+00:16:54,900 --> 00:17:02,160
+200 pictures and share this code applied
+to some items will give me three boxes
+
+194
+00:17:02,160 --> 00:17:10,579
+of equal with the items to wrap we can
+drug to induce mollen see that when the
+
+195
+00:17:10,579 --> 00:17:16,409
+boxes get smaller than 200 pixels a box
+will wrap onto line to try and maintain
+
+196
+00:17:16,410 --> 00:17:21,709
+that 200 pixel basis to the final box
+here is taking up all of the Station
+
+197
+00:17:21,709 --> 00:17:26,459
+Road too because the linemen just worked
+out on a row by row basic if the vote he
+
+198
+00:17:26,459 --> 00:17:33,470
+has sworn I it's allowed to grow it will
+grow it will fill the available space if
+
+199
+00:17:33,470 --> 00:17:40,570
+I don't want the boxes to grow i sat
+next row 20 a wide window size my boxers
+
+200
+00:17:40,570 --> 00:17:44,429
+will just stay at the 200 picture if you
+let the boxes wrapped the third item
+
+201
+00:17:44,430 --> 00:17:50,440
+will still drop down but it won't grow
+and fill the line and you can talk
+
+202
+00:17:50,440 --> 00:17:55,960
+individual items to to hear about it
+rules for box 300 boxes can grow and
+
+203
+00:17:55,960 --> 00:18:03,830
+shrink to two pixels but box three
+cannot grow so you see what happens once
+
+204
+00:18:03,830 --> 00:18:09,050
+the boxes have to stretch wide than 200
+pictures it stays 200 pixels the space
+
+205
+00:18:09,050 --> 00:18:14,310
+that's remaining is distributed between
+the boxes that have allowed to grow but
+
+206
+00:18:14,310 --> 00:18:17,659
+there's more than this because
+responsive design is about proportions
+
+207
+00:18:17,660 --> 00:18:22,190
+that's what all option to just about to
+in order that we can maintain
+
+208
+00:18:22,190 --> 00:18:26,370
+proportions elements luxury can assign
+different bodies just text grow on
+
+209
+00:18:26,370 --> 00:18:27,780
+fracturing
+
+210
+00:18:27,780 --> 00:18:30,260
+I'm setting box 32 flex groped
+
+211
+00:18:30,260 --> 00:18:33,520
+with my other two boxes that default
+reflects Wang
+
+212
+00:18:36,040 --> 00:18:40,820
+this doesn't mean is that box three
+becomes twice the size of the boxes it
+
+213
+00:18:40,820 --> 00:18:44,600
+means that after the 200 pixel basis has
+been taken away from the available
+
+214
+00:18:44,600 --> 00:18:49,959
+within the container the rest of the
+space is assigned to each item across
+
+215
+00:18:49,960 --> 00:18:55,960
+according to that flex growth factor
+that sounds very confusing a good way to
+
+216
+00:18:55,960 --> 00:18:56,950
+figure it all out
+
+217
+00:18:56,950 --> 00:19:01,020
+is this play xbox test a tool you can
+stick in a load of values and it will
+
+218
+00:19:01,020 --> 00:19:05,389
+tell you what you would come out with I
+want to start playing around with it to
+
+219
+00:19:05,390 --> 00:19:11,390
+make century and once you understand
+that you've got a head start to
+
+220
+00:19:11,390 --> 00:19:18,810
+understand FL unit this is a fraction
+unit and like flex grow it allows you to
+
+221
+00:19:18,810 --> 00:19:25,389
+assign a fraction of the available space
+so that take a quick look at this is my
+
+222
+00:19:25,390 --> 00:19:31,090
+simple grid it defines three columns or
+with one out of the way so that creates
+
+223
+00:19:31,090 --> 00:19:38,399
+three equal which color if I change my
+definition and create 600 pixels with
+
+224
+00:19:38,400 --> 00:19:43,440
+columns and absolute side column and
+then 21 fraction unit callers great
+
+225
+00:19:43,440 --> 00:19:48,360
+first gives the fixed width 600 pixels
+the remaining space it divides into two
+
+226
+00:19:48,360 --> 00:19:55,149
+and it gives off its one column to the
+other if I change my last column 3 fo
+
+227
+00:19:55,150 --> 00:20:01,550
+the remaining space be divided 243 part
+is given to the 301 Park into the water
+
+228
+00:20:01,550 --> 00:20:07,370
+this just light for Xbox means that we
+can create fully flexible layout that
+
+229
+00:20:07,370 --> 00:20:14,580
+have so much fixed element in this is
+just like the Holy Grail layout that we
+
+230
+00:20:14,580 --> 00:20:19,470
+used to try and build this was six
+sidebars the liquid center weather
+
+231
+00:20:19,470 --> 00:20:21,400
+center column could be first in the show
+
+232
+00:20:21,400 --> 00:20:28,870
+order but would flex according to screen
+with their like this should not seen
+
+233
+00:20:28,870 --> 00:20:35,010
+this in taxable this is the CSS grid
+layout Ascot layout template us that CSS
+
+234
+00:20:35,010 --> 00:20:40,140
+gives you a layout on the center column
+is set to one fraction unit that will
+
+235
+00:20:40,140 --> 00:20:42,419
+stretch on take up all of the
+
+236
+00:20:42,419 --> 00:20:47,940
+available which it will look something
+like this which is a good 2005 era
+
+237
+00:20:47,940 --> 00:20:52,690
+layout it's not what wall aiming to
+build these days but I feel that given
+
+238
+00:20:52,690 --> 00:21:00,159
+the history it's nice to know that we
+can finally do it so it's a new system
+
+239
+00:21:00,159 --> 00:21:05,429
+for layout I think it raises a huge
+amount of different possibilities I'm
+
+240
+00:21:05,429 --> 00:21:09,559
+very excited to see what happens it gets
+into the hands of people who are
+
+241
+00:21:09,559 --> 00:21:13,570
+creative with their stuff well some
+people like me who can just build things
+
+242
+00:21:13,570 --> 00:21:18,689
+we've got great we've got the Xbox and
+then that's tied together with the
+
+243
+00:21:18,690 --> 00:21:24,220
+alignment of space distribution
+properties from Fox alignment the key
+
+244
+00:21:24,220 --> 00:21:29,090
+difference between these two specs
+people often say oh well which should I
+
+245
+00:21:29,090 --> 00:21:32,119
+be using should I use an ideal world
+wanted got them both would I be using
+
+246
+00:21:32,119 --> 00:21:39,320
+Flex boxer would I use trade show for
+Xbox is for one dimensional layout thats
+
+247
+00:21:39,320 --> 00:21:44,509
+things that can be laid out in a row or
+laid out in a column although it was
+
+248
+00:21:44,509 --> 00:21:50,830
+essentially still got an unbroken line
+which is for two-dimensional layout so
+
+249
+00:21:50,830 --> 00:21:58,178
+you working with was calling the
+simplest example of this if we're at of
+
+250
+00:21:58,179 --> 00:22:04,009
+items using Flex books I've got a flex
+basis here of 200 pixels and the items
+
+251
+00:22:04,009 --> 00:22:11,090
+are allowed to grow and shrink I have
+got five items what happens here the
+
+252
+00:22:11,090 --> 00:22:16,019
+Flex items rap show each row start
+acting like a new facts contained I'm
+
+253
+00:22:16,019 --> 00:22:19,450
+space distribution happens across the
+row that's how it works
+
+254
+00:22:20,070 --> 00:22:23,149
+show at the top line we've got three
+items and then we go to the next line
+
+255
+00:22:23,149 --> 00:22:27,508
+we've only got two items that allowed to
+grow so it's different and they spread
+
+256
+00:22:27,509 --> 00:22:31,470
+out across there and then people say oh
+well actually what I'd like to be able
+
+257
+00:22:31,470 --> 00:22:37,409
+to do is line up those two bottom iTunes
+underneath the items at the top and
+
+258
+00:22:37,409 --> 00:22:42,070
+fresh box doesn't do this because it's
+dealing with issues of unbroken line
+
+259
+00:22:42,070 --> 00:22:45,799
+which is where you want grid layout if
+you want to do something like this
+
+260
+00:22:45,799 --> 00:22:49,720
+because she wanted to control both rows
+and columns
+
+261
+00:22:53,080 --> 00:22:57,399
+with grid layout you do something like
+this you wouldn't do anything with the
+
+262
+00:22:57,400 --> 00:23:02,590
+item is it all be controlled when you're
+creating the grid and then the items
+
+263
+00:23:02,590 --> 00:23:07,209
+would be flown in flowed into it and
+that would give you this kind of layout
+
+264
+00:23:07,210 --> 00:23:11,830
+so unless you actually especially said
+something I want you to span across to
+
+265
+00:23:11,830 --> 00:23:20,250
+the column tracks you get them in single
+trucks so this wonderful new goodness
+
+266
+00:23:20,250 --> 00:23:26,180
+reflects folks house that she got really
+great for our sport at this point if you
+
+267
+00:23:26,180 --> 00:23:31,760
+can use your browser's you can use your
+Xbox even if you have to sport old
+
+268
+00:23:31,760 --> 00:23:36,300
+browsers it's very possible to use quite
+a lot of flex box has essentially an
+
+269
+00:23:36,300 --> 00:23:40,200
+enhancement to your layout soyuz older
+methods and then be tweaked the
+
+270
+00:23:40,200 --> 00:23:44,880
+alignment and get things look pretty
+tight using the Xbox but really everyone
+
+271
+00:23:44,880 --> 00:23:48,630
+should probably starting to use some
+degree reflects box in their work at
+
+272
+00:23:48,630 --> 00:23:54,170
+this point because its bid got really
+good support it's worth doing so proud
+
+273
+00:23:54,170 --> 00:23:59,080
+to offer grid layout not so good the
+only browser that has any implementation
+
+274
+00:23:59,080 --> 00:24:06,159
+which is sort of live is I 1011 edge and
+that is because the suspect came from
+
+275
+00:24:06,160 --> 00:24:10,260
+Microsoft they crashed early
+implementation of it in those brushes
+
+276
+00:24:10,260 --> 00:24:15,730
+but it is quite different now to the the
+current specification sheet was
+
+277
+00:24:15,730 --> 00:24:21,310
+essentially the very first
+implementation of the spec for the best
+
+278
+00:24:21,310 --> 00:24:25,909
+stuff to work with is in chrome and
+regular chrome but it's behind a
+
+279
+00:24:25,910 --> 00:24:31,250
+flagship need to enable the experimental
+web platform features flag and then lots
+
+280
+00:24:31,250 --> 00:24:34,260
+of demos all things stuck shoney's today
+you can have a look at them play about
+
+281
+00:24:34,260 --> 00:24:39,890
+with that would in blink show it should
+chrome and opera is being done by
+
+282
+00:24:39,890 --> 00:24:45,880
+earlier sponsored by Bloomberg they're
+also doing the work in WebKit WebKit
+
+283
+00:24:45,880 --> 00:24:51,810
+nightlies how quickly that enables you
+need to use a WebKit prefix grades on
+
+284
+00:24:51,810 --> 00:24:56,129
+the edge backlog at high priority so I'm
+assuming that intending to bring the
+
+285
+00:24:56,130 --> 00:25:00,680
+implementation up to the same spec
+nothing else and Mozilla are currently
+
+286
+00:25:00,680 --> 00:25:04,820
+implementing great in Firefox quite a
+lot of these examples work in Firefox
+
+287
+00:25:04,820 --> 00:25:05,429
+tonight
+
+288
+00:25:05,430 --> 00:25:10,770
+please adjust to a party fell out there
+so great is coming and unlike flex books
+
+289
+00:25:10,770 --> 00:25:15,060
+which kind of trickled out it kind of
+heartbroken states and changed and goes
+
+290
+00:25:15,060 --> 00:25:19,429
+already confused which has been
+developed behind flags so when it does
+
+291
+00:25:19,430 --> 00:25:24,740
+eventually shift and browses it should
+be fairly equal across browsers and very
+
+292
+00:25:24,740 --> 00:25:28,420
+complete and it's been kind of kept
+behind the flag so that we don't have
+
+293
+00:25:28,420 --> 00:25:33,300
+this problem of it emerging in this
+which is good news for when it does
+
+294
+00:25:33,300 --> 00:25:37,220
+arrive we can start using it with some
+confidence it we've gotten your problem
+
+295
+00:25:37,220 --> 00:25:44,080
+just use it with I have lots and lots of
+great examples to play with if you want
+
+296
+00:25:44,080 --> 00:25:50,710
+to go and have a look good by
+example.com is why I keep all of my good
+
+297
+00:25:50,710 --> 00:25:54,940
+examples I can't put new ones up and I'd
+love to have more people looking at this
+
+298
+00:25:54,940 --> 00:25:58,670
+stuff in particular who got an interest
+in accessibility it's not my of
+
+299
+00:25:58,670 --> 00:26:02,570
+expertise not to love to see more
+conversations happening around you know
+
+300
+00:26:02,570 --> 00:26:05,879
+using these new last message and
+accessibility think it's a very very
+
+301
+00:26:05,880 --> 00:26:11,860
+important subject I have got a office
+hours thing at lunch so very happy to
+
+302
+00:26:11,860 --> 00:26:16,500
+have a chat about any of this stuff and
+you will find my slides all the code
+
+303
+00:26:16,500 --> 00:26:21,610
+examples of that year and you can always
+treated me on Twitter or drop me a line
+
+304
+00:26:21,610 --> 00:26:24,409
+of talking about this stuff thank you
+very much for listening
+
